@@ -8,8 +8,8 @@ jobs:
      runs-on: ubuntu-latest
      steps:
        - name: Docker_Version
-         run: $versiond=docker --version
+         run: $versiond = docker --version
        - name: Python_Version
-         run: $versionp=python --version
+         run: $versionp = python --version
        - name: Display_Version
          run: echo "Hello Team $versionp $versiond"
