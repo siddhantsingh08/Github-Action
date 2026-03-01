@@ -1,0 +1,11 @@
+name: First Yml
+'on':
+  push:
+    branches:
+      - main
+jobs:
+  Greet:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say hello to User
+        run: echo "Hello World"
