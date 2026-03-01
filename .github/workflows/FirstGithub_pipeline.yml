@@ -1,0 +1,15 @@
+name: Dev_Pipeline
+
+on:
+  push:
+    branches: [main]
+jobs:
+   Development_build:
+     runs-on: ubuntu-latest
+     steps:
+       - name: Docker_Version
+         run: $versiond=docker --version
+       - name: Python_Version
+         run: $versionp=python --version
+       - name: Display_Version
+         run: echo "Hello Team $versionp $versiond"
